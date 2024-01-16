@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style-inicial.css">
+  <title>Login/Carrossel de Imagens</title>
+
+</head>
+<body>
+    
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="aba2.jpg" alt="Imagem 1">
+              </div>
+              <div class="swiper-slide">
+                <img src="professores.jpg" alt="Imagem 2">
+              </div>
+              <div class="swiper-slide">
+                <img src="turmaaba.jpg" alt="Imagem 3">
+              </div>
+              <!-- Adicione mais slides conforme necessário -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var mySwiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });
+</script>
+<main>
+<div class="iconepng">
+    <img src="icone.png" alt="Ícone do Aluno"></div>
+    <div class="iconepng2">
+        <img src="icone2.png" alt="Ícone do Aluno"></div>
+<!--tela de login-->
+<div class="login">
+  <h1>Bem Vindo(a)!</h1>
+  <h2>Insira os seus dados para continuar</h2>
+    <div class="form-group">
+      <label for="email">Matrícula</label>
+      <input
+        type="email"
+        name="email"
+        required
+        class="form-control"
+        value=""
+        onchange="handleChange(event)"
+      />
+      <span class="text-danger"></span>
+    </div>
+    <div class="form-group">
+      <label for="password">Data de Nascimento </label>
+      <input
+        type="password"
+        name="password"
+        required
+        class="form-control"
+        value=""
+        onchange="handleChange(event)"
+      />
+      <span class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">
+      Acessar
+    </button>
+    <div class="equipe-pedagogica">
+      <a href="tela-pedagogico.html" target="_blank">Equipe pedagógica? Faça login por aqui</a>
+    </div>
+  </form>
+</div>
+</main>
+<script src="app.js"></script> 
+</body>
+</html>
