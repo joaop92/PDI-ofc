@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   --primary-color: #800000;
   --secundary-color: #232e5b;
@@ -19,10 +21,10 @@ header {
 }
 
 nav {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .icon {
@@ -41,6 +43,8 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
+  padding: 0;
+  background-color: #e9eaec;
 }
 
 .card-column {
@@ -65,7 +69,8 @@ body {
   font-family: var(--font-family);
   margin: 5px;
   position: absolute;
-  top: 30px; /* Ajuste o valor conforme necessário para a posição desejada */
+  top: 30px;
+  /* Ajuste o valor conforme necessário para a posição desejada */
   left: 15%;
   transform: translateX(-50%);
 }
@@ -147,7 +152,9 @@ button {
   justify-content: center;
 }
 
-button:focus { outline: revert } 
+button:focus {
+  outline: revert
+}
 
 header {
   height: 80px;
@@ -160,8 +167,7 @@ header {
   max-width: 480px;
   display: flex;
   align-items: center;
-  box-shadow: rgba(100, 100, 111, 0.2)
-      0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .navigation__group {
@@ -185,11 +191,11 @@ header {
   align-items: center;
 }
 
-.navigation__group > button:nth-child(1) {
+.navigation__group>button:nth-child(1) {
   margin-right: auto;
 }
 
-.navigation__group button:hover, 
+.navigation__group button:hover,
 .navigation__group button:focus {
   background-color: var(--button-hover);
   border-radius: 50%;
@@ -214,10 +220,8 @@ header {
   flex-direction: column;
   background-color: white;
   gap: 4px;
-  animation: fadeOutAnimation ease-in-out 
-      0.2s forwards;
-  box-shadow: rgba(100, 100, 111, 0.2)
-      0px 7px 29px 0px;
+  animation: fadeOutAnimation ease-in-out 0.2s forwards;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .dropdown__wrapper h3 {
@@ -247,8 +251,7 @@ header {
 }
 
 .dropdown__wrapper--fade-in {
-  animation: fadeInAnimation ease-in-out
-      0.2s forwards;
+  animation: fadeInAnimation ease-in-out 0.2s forwards;
 }
 
 .none {
@@ -258,8 +261,7 @@ header {
 .hide {
   opacity: 0;
   visibility: hidden;
-  animation: fadeOutAnimation ease-in-out
-      0.2s forwards;
+  animation: fadeOutAnimation ease-in-out 0.2s forwards;
 }
 
 .app svg {
@@ -267,3 +269,114 @@ header {
   width: 48px;
   height: 48px;
 }
+
+
+
+/*botão logout */
+
+/* Adicione esta seção ao seu arquivo CSS existente */
+
+/* Estilo do botão de login */
+.login-container {
+  position: fixed;
+  top: 20px;
+  right: 350px;
+}
+
+.login-button {
+  text-decoration: none;
+  background-color: #232e5b; /* Cor de fundo do botão de login */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  
+}
+
+.login-button i {
+  font-size: 20px; /* Tamanho do ícone */
+  margin-right: 5px; /* Espaçamento à direita do ícone */
+}
+
+/* Efeito de hover */
+.login-button:hover {
+  background-color: #232e5b /* Cor de fundo ao passar o mouse sobre o botão */
+}
+
+
+/*abapng*/
+.abapng {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Adiciona uma camada de z-index para garantir que fique sobre outros elementos */
+}
+
+.abapng img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+  background-color: #232e5b;
+  border-radius: 50%;
+  /* Ajuste conforme necessário */
+}
+
+/* Posicionamento do botão de logout */
+
+/* Estilo do botão de login */
+.login-container {
+  position: fixed;
+  bottom: 20px;
+  right: 360px;
+}
+
+.login-button {
+  text-decoration: none;
+  background-color: #232e5b; /* Cor de fundo do botão de login */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.login-button i {
+  font-size: 20px; /* Tamanho do ícone */
+  margin-right: 5px; /* Espaçamento à direita do ícone */
+}
+
+/* Efeito de hover */
+.login-button:hover {
+  background-color: #2980b9; /* Cor de fundo ao passar o mouse sobre o botão */
+}
+
+
+
+
+/*fotoperfil*/
+.profile-container {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+  z-index: 1;
+}
+
+/* Estilo da foto */
+.profile-container img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #232e5b;
+  margin-left: 20px;
+}
+
